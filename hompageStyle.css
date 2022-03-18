@@ -1,0 +1,134 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+.container{
+    margin-left: 250px;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    overflow: hidden;
+}
+
+.nav-bar a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #222c6a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.nav-bar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.nav-bar a.active{
+    background-color: #2186e4;
+    color: white;
+}
+
+@media(max-width: 700px){
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        overflow: visible;
+    }
+    .nav-bar a{
+        /*display: inline-block;*/
+        color: #222c6a;
+        text-align: center;
+        padding: 14px 2px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .container{
+        margin-top: 75px;
+        margin-left: 0px;
+    }
+}
+.title{
+    text-align: center;
+}
+
+.mySlides{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.lowerHeader{
+    text-align: center;
+    color: gray;
+}
+
+.disclaimer{
+    text-align: center;
+    color: gray;
+}
+
+#copyrights{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-small;
+    text-align: center;
+}
+
+#ad{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 400px;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#previous:hover{
+    background-color: #2186e4;
+    color: white;
+}
+
+#next:hover{
+    background-color: #2186e4;
+    color: white;
+}

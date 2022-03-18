@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="hompageStyle.css">
+    
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#home" class="active">Home</a>
+        <a href="#amenities" class="barItem">Amenities</a>
+        <a href="#ratesReservations" class="barItem">Rates & Reservations</a>
+        <a href="#siteMap" class="barItem">Site Map</a>
+        <a href="#seasonalSites" class="barItem">Available Seasonal Sites</a>
+        <a href="#lake" class="barItem">The Lake</a>
+        <a href="#location" class="barItem">Location</a>
+        <a href="#areaAttractions" class="barItem">Area Attractions</a>
+        <a href="#photoGallery" class="barItem">Photo Gallery</a>
+        <a href="#contactUs" class="barItem">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">Start A family Tradition at Northwood Shores</h1>
+        
+        <!--Slide Show-->
+        <section>
+            <img class="mySlides" src="Images/campfire.jpg" alt="Campfire">
+            <img class="mySlides" src="Images/campfire2.jpg" alt="Campfire ">
+            <img class="mySlides" src="Images/campfire3.jpg" alt="Campfire">
+            <img class="mySlides" src="Images/canoe.jpg" alt="Canoe">
+            <img class="mySlides" src="Images/house.jpg" alt="House">
+            <img class="mySlides" src="Images/lake.jpg" alt="lake">
+            <img class="mySlides" src="Images/lake2.jpg" alt="Lake">
+            <img class="mySlides" src="Images/stars.jpg" alt="Stars">
+            <img class="mySlides" src="Images/lake3.jpg" alt="Lake">
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel(){
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+
+                for(i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if(myIndex > x.length){
+                    myIndex = 1;
+                }
+                x[myIndex-1].style.display ="block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+
+        <img id="ad" src="Images/ad.jpg" alt="Northwood Shores Campground">
+
+        <h2 class="lowerHeader">
+            LOOK FOR OUR BILLBOARD<br>ON HWY 53
+        </h2>
+        
+        <h2 class="lowerHeader">
+            RESERVATIONS<br>Text 815 703 8233 for Availability<br>or<br>EMAIL bordercamp@yahoo.com
+        </h2>
+
+        <p class="disclaimer">
+            <span style="font-size:larger">Northwood Shores</span>
+            is a family campground located just north of Rice Lake<br>
+            Wisconsin, in a tranquil north woods setting.  There are 109 campsites<br>
+            accommodating daily, monthly, and seasonal camping.<br>
+            <br>
+            We are located on 37 wooded acres with over 3500 feet of unspoiled shoreline of<br>
+            Upper Devils Lake<br>
+            <br>
+            Your family will enjoy swimming in the heated pool, fishing form the dock, or just<br>
+            relaxing on our sandy beach.
+        </p>
+
+        <p class="disclaimer" style="font-family: 'Times New Roman', Times, serif;">
+            DAILY, WEEKLY, MONTHLY & SEASONAL SITES AVAILABLE
+            <br>
+            <br>
+            <i>Come enjoy all we have to offer!</i>
+        </p>
+            
+        <footer >
+            <p id="copyrights">
+                2011 Northwood Shores Campground, LLC All rights reserved
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
