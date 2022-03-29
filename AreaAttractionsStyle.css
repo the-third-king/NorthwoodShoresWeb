@@ -87,6 +87,25 @@ body{
     color: white;
 }
 
+.activities{
+    list-style: none;
+    font-size: x-large;
+    position: relative;
+}
+
+.links{
+    list-style: square;
+}
+
+.links a,.links a:visited, .bodyText a, .bodyText a:visited{
+    text-decoration: none;
+    color: #2186e4;
+}
+
+.links a:hover, .bodyText a:hover{
+    font-weight: bold;
+}
+
 #copyrights{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-small;
