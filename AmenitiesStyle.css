@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    margin-left: 15%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -18,7 +18,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;
+    width: 20%;
     height: 100%;
     background-color: gray;
     display: flex;
@@ -60,6 +60,7 @@ body{
         display: flex;
         flex-direction: row;
         align-items: left;
+        justify-content: center;
         overflow: visible;
     }
     .nav-bar a{
@@ -70,29 +71,34 @@ body{
         text-decoration: none;
         font-size: 10px;
     }
+
     .container{
         margin-top: 75px;
         margin-left: 0px;
     }
 }
 
-#mapLink:hover{
-    font-weight: bold;
-}
-#mapLink{
-    color: #2186e4;
-    text-decoration: none;
-}
-#mapLink:visited{
-    color: #2186e4;
+.page{
+    border: #2186e4 solid 2px;
+    border-radius: 6px;
+    background-color: #2186e4;
+    width: 90%; 
+    text-align: center;
+    color: white;
 }
 
-iframe{
-    width: 600px;
-    height: 450px;
-    border: 0;
-    padding-top: 50px;
-    padding-bottom: 25px;
+.amenities{
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.images{
+    margin: 10px;
+}
+
+.images img{
+    padding: 10px
 }
 
 #copyrights{
