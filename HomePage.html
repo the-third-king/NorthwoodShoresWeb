@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="hompageStyle.css">
-    
 
 </head>
 <body>
     <!-- Nav Bar -->
     <nav class="nav-bar">
-        <a href="#home" class="active">Home</a>
-        <a href="#amenities" class="barItem">Amenities</a>
+        <a href="HomePage.html" class="active">Home</a>
+        <a href="Amenities.html" class="barItem">Amenities</a>
         <a href="#ratesReservations" class="barItem">Rates & Reservations</a>
         <a href="#siteMap" class="barItem">Site Map</a>
         <a href="#seasonalSites" class="barItem">Available Seasonal Sites</a>
         <a href="#lake" class="barItem">The Lake</a>
-        <a href="#location" class="barItem">Location</a>
-        <a href="#areaAttractions" class="barItem">Area Attractions</a>
+        <a href="Location.html" class="barItem">Location</a>
+        <a href="AreaAttractions.html" class="barItem">Area Attractions</a>
         <a href="#photoGallery" class="barItem">Photo Gallery</a>
         <a href="#contactUs" class="barItem">Contact Us</a>
     </nav>
@@ -28,6 +27,7 @@
         <h1 class="title">Start A family Tradition at Northwood Shores</h1>
         
         <!--Slide Show-->
+        <!--
         <section>
             <img class="mySlides" src="Images\campfire.jpg" alt="Campfire">
             <img class="mySlides" src="Images\campfire2.jpg" alt="Campfire ">
@@ -39,27 +39,13 @@
             <img class="mySlides" src="Images\stars.jpg" alt="Stars">
             <img class="mySlides" src="Images\lake3.jpg" alt="Lake">
         </section>
+        -->
 
         <!-- Slide Show Script-->
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel(){
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-
-                for(i = 0; i < x.length; i++){
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if(myIndex > x.length){
-                    myIndex = 1;
-                }
-                x[myIndex-1].style.display ="block";
-                setTimeout(carousel, 3000);
-            }
-        </script>
+        <!--
+        <script type="text/javascript" src="homepageScript.js"></script>
+        -->
+        <img class="mySlides" src="Images\campfire3.jpg" alt="Campfire">
 
         <img id="ad" src="Images\ad.jpg" alt="Northwood Shores Campground">
 
