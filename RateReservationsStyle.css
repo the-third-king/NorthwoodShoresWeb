@@ -1,0 +1,129 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+.container{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.card-available {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+    background-color: rgb(245, 168, 168);
+  }
+.card-daily-sites {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+    background-color: lightgreen;
+}
+.card-extra {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+}
+  /* Add some padding inside the card container */
+.card-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 30px 10px;
+}
+.row {margin: 0 -5px;} 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    align-items: left;
+    overflow: hidden;
+}
+
+.nav-bar a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #222c6a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.nav-bar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.nav-bar a.active{
+    background-color: #2186e4;
+    color: white;
+}
+
+@media(max-width: 700px){
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        overflow: visible;
+    }
+    .nav-bar a{
+        /*display: inline-block;*/
+        color: #222c6a;
+        text-align: center;
+        padding: 14px 2px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.page{
+    border: #2186e4 solid 2px;
+    border-radius: 6px;
+    background-color: #2186e4;
+    width: 90%; 
+    text-align: center;
+    color: white;
+}
+
+#copyrights{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-small;
+    text-align: center;
+}
