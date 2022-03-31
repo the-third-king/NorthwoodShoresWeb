@@ -43,13 +43,6 @@ iframe{
     padding-top: 50px;
     padding-bottom: 25px;
 }
-
-@media(max-width: 700px){
-    iframe{
-        width: 400px;
-        height: 225px;
-        border: 0;
-        padding-top: 50px;
-        padding-bottom: 25px;
-    }
+.img{
+    margin-top: 50px;
 }

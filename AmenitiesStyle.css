@@ -13,21 +13,17 @@ body{
     flex-wrap: nowrap;
     align-items: center;
 }
-
-@media(max-width: 700px){
-
-}
-
 .amenities{
     list-style: none;
     font-size: large;
     font-weight: bold;
 }
 
-.images{
-    margin: 10px;
-}
-
-.images img{
-    padding: 10px
+li{
+    font-size: x-large;
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
