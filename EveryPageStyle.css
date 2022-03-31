@@ -92,6 +92,10 @@ footer p{
     margin-left: 20px;
 }
 
+.fa-bars{
+    margin-left: 5px;
+}
+
 .fa-facebook:hover{
     opacity: 0.7;
 }
@@ -165,5 +169,6 @@ footer p{
     }
     footer{
         margin-left: 0;
+        bottom: 0;
     }
 }
