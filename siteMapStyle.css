@@ -12,7 +12,6 @@ body{
     padding: 2px 16px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 78px;
 }
 
 .image{
@@ -22,7 +21,6 @@ body{
 }
 
 .container{
-    margin-left: 20%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,178 +28,6 @@ body{
     justify-content: space-around;
 }
 
-.nav-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    background-color: gray;
-    display: flex;
-    order: 1;
-    flex-direction: column;
-    align-items: left;
-    overflow: hidden;
-}
-
-.nav-bar a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 15px;
-    font-size: 0.9em;
-    font-weight: bold;
-    color: #222c6a;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.nav-bar a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
-.nav-bar a.active{
-    background-color: #2186e4;
-    color: white;
-}
-
-.slogan{
-    display:flex;
-    margin-left: 20%;
-    justify-content: left;
-    background-color: gray;
-    align-items: baseline;
-}
-
-.slogan p{
-    padding-left: 3%;
-    font-size: x-large;
-}
-
-.dropdown{
-    display: none;
-}
-
-@media(max-width: 900px){
-    .image{
-        width: 450px;
-        height: 250px;
-        object-fit: fill;
-    }
-}
-
-
-@media(max-width: 700px){
-    .nav-bar{
-        display: none;
-    }
-    .container{
-        margin-left: 0;
-    }
-    .slogan{
-        margin-left: 0;
-        height: 50px;
-        align-items: center;
-    }
-    .dropdown{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .dropdown .dropbtn{
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        
-        background-color: inherit;
-    }
-    .dropdown-content{
-        display: none;
-        position: absolute;
-        margin-top: 40px;
-        background-color: gray;
-        min-width: 250px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content a{
-        display: block;
-        text-decoration: none;
-        padding: 5px 15px;
-        font-size: 0.9em;
-        font-weight: bold;
-        color: #222c6a;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    .dropdown-content a:hover{
-        background-color: #ddd;
-        color: black;
-    }
-    .dropdown-content a.active{
-        background-color: #2186e4;
-        color: white;
-    }
-    .dropdown:hover .dropdown-content{
-        display: block;
-    }
-    .slogan p {
-        width: 0;
-        opacity: 0;
-    }
-    .page{
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
-.page{
-    display: flex;
-    flex-direction: column;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #2186e4;
-    margin-left: 20%;
-    text-align: center;
-    /*justify-content: center;*/
-    color: white;
-    font-size: x-large;
-}
-
 footer{
-    display: flex;
-    flex-direction: row;
-    background: #2186e4;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 100px;
-    width: 100%;
-}
-
-footer p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    text-align: center;
-}
-
-.fa{
-    display: flex;
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.fa-facebook:hover{
-    opacity: 0.7;
-}
-
-.fa-facebook{
-    background: #3B5998;
-    color: white;
+    margin-top: 101px;
 }
