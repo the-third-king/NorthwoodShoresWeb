@@ -45,7 +45,12 @@ body{
     width: 20%;
     padding: 30px 10px;
 }
-.row {margin: 0 -5px;} 
+.row {
+    margin: 0 -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
 .row:after {
     content: "";
     display: table;
