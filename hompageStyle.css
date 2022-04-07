@@ -77,3 +77,38 @@ body{
     background-color: #2186e4;
     color: white;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background: #2186e4;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 80%;
+    margin-left: 20%;
+}
+
+@media(max-height: 850px){
+    footer{
+        position: relative;
+    }
+}
+
+@media(max-width: 700px){
+    
+    footer{
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media(max-height:825px){
+        footer{
+            position: relative;
+        }
+    }
+}

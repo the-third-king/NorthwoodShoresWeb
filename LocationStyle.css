@@ -1,12 +1,12 @@
-*{
+* {
     font-family: sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.container{
+.container {
     margin-left: 20%;
     display: flex;
     flex-direction: column;
@@ -14,29 +14,33 @@ body{
     align-items: center;
 }
 
-#mapLink:hover{
+#mapLink:hover {
     font-weight: bold;
 }
-#mapLink{
+
+#mapLink {
     color: #2186e4;
     text-decoration: none;
 }
-#mapLink:visited{
+
+#mapLink:visited {
     color: #2186e4;
 }
 
-#mapLink:hover{
+#mapLink:hover {
     font-weight: bold;
 }
-#mapLink{
+
+#mapLink {
     color: #2186e4;
     text-decoration: none;
 }
-#mapLink:visited{
+
+#mapLink:visited {
     color: #2186e4;
 }
 
-iframe{
+iframe {
     width: 600px;
     height: 450px;
     border: 0;
@@ -44,12 +48,47 @@ iframe{
     padding-bottom: 25px;
 }
 
-@media(max-width: 700px){
-    iframe{
+
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    background: #2186e4;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-left: 20%;
+}
+
+@media(max-height: 925px) {
+    footer {
+        position: relative;
+    }
+}
+@media(max-width: 700px) {
+    iframe {
         width: 400px;
         height: 225px;
         border: 0;
         padding-top: 50px;
         padding-bottom: 25px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media(max-height:675px) {
+        footer {
+            position: relative;
+        }
     }
 }

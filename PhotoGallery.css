@@ -44,10 +44,42 @@ body{
     margin: 5px;
     font-size: auto;
   }
+  footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    background: #2186e4;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-left: 20%;
+}
 
-  @media(max-width: 700px){
-    .card{
-      width: 45%;
+@media(max-height: 1250px){
+    footer{
+        position: relative;
     }
+}
+
+@media(max-width: 700px){
+  .card{
+    width: 45%;
   }
+    footer{
+        position: fixed;
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media(max-height:1250px){
+        footer{
+            position: relative;
+        }
+    }
+}
 

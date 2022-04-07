@@ -27,3 +27,46 @@ li{
     margin: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    background: #2186e4;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 80%;
+    margin-left: 20%;
+}
+
+@media(max-height: 800px){
+    footer{
+        position: relative;
+    }
+}
+
+@media(max-height: 825px){
+    footer{
+        position: relative;
+    }
+}
+
+@media(max-width: 700px){
+    
+    footer{
+        position: fixed;
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media(max-height:800px){
+        footer{
+            position: relative;
+        }
+    }
+}

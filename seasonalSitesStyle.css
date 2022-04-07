@@ -17,6 +17,7 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-left: 1rem;
 }
 
 .card-available {
@@ -25,7 +26,6 @@ footer{
     border-radius: 5px; /* 5px rounded corners */
     width: 30%;
     background-color: rgb(245, 168, 168);
-    margin-left: 20%;
 }
 
 .card-container {
@@ -33,4 +33,41 @@ footer{
     border-radius: 5px; /* 5px rounded corners */
     padding: 2px 16px;
     text-align: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    background: #2186e4;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-left: 20%;
+}
+@media(max-height: 850px){
+    footer{
+        position: relative;
+    }
+}
+
+@media(max-width: 700px){
+    
+    footer{
+        position: fixed;
+        bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media(max-height: 450px){
+        footer{
+            position: relative;
+        }
+    }
 }
