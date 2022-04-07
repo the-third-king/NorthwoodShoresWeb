@@ -12,6 +12,7 @@
     order: 5;
 }
 
+
 .nav-bar a{
     display: inline-block;
     text-decoration: none;
@@ -29,7 +30,7 @@
 }
 
 .nav-bar a.active{
-    background-color: #2186e4;
+    background-color: #9d5c63;
     color: white;
 }
 
