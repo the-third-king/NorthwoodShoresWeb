@@ -12,7 +12,6 @@
     order: 5;
 }
 
-
 .nav-bar a{
     display: inline-block;
     text-decoration: none;
@@ -30,21 +29,20 @@
 }
 
 .nav-bar a.active{
-    background-color: #9d5c63;
+    background-color: #789495;
     color: white;
 }
 
 .slogan{
     display:flex;
-    margin-left: 20%;
     background: fixed;
-    justify-content: left;
-    background-color: #9d5c63;
+    padding-left: 12%;
+    justify-content: center;
+    background-color: #789495;
     align-items: baseline;
 }
 
 .slogan p{
-    padding-left: 3%;
     font-size: x-large;
     font-family: cursive;
 }
