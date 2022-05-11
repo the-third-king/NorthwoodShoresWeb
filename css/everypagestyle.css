@@ -4,7 +4,7 @@
     left: 0;
     width: 20%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.523);
+    background-color: rgb(221, 221, 221);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -18,7 +18,7 @@
     padding: 5px 15px;
     font-size: 0.9em;
     font-weight: bold;
-    color: #222c6a;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
