@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amenities</title>
-    <link rel="stylesheet" href="css/amenitiesstyle.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contactusstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/everypagestyle.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
+    <!-- Nav Bar -->
     <nav class="nav-bar">
         <a href="homepage.html" class="barItem">Home</a>
-        <a href="amenities.html" class="active">Amenities</a>
+        <a href="amenities.html" class="barItem">Amenities</a>
         <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
         <a href="sitemap.html" class="barItem">Site Map</a>
         <a href="seasonalsites.html" class="barItem">Available Seasonal Sites</a>
@@ -21,7 +20,7 @@
         <a href="location.html" class="barItem">Location</a>
         <a href="areaattractions.html" class="barItem">Area Attractions</a>
         <a href="photogallery.html" class="barItem">Photo Gallery</a>
-        <a href="contactus.php" class="barItem">Contact Us</a>
+        <a href="contactus.php" class="active">Contact Us</a>
     </nav>
 
     <div class="slogan">
@@ -29,7 +28,7 @@
             <button class="dropbtn"><i class="fa fa-bars"></i></button>
             <div class="dropdown-content">
                 <a href="homepage.html" class="barItem">Home</a>
-                <a href="amenities.html" class="active">Amenities</a>
+                <a href="amenities.html" class="barItem">Amenities</a>
                 <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
                 <a href="sitemap.html" class="barItem">Site Map</a>
                 <a href="seasonalsites.html" class="barItem">Available Seasonal Sites</a>
@@ -37,38 +36,67 @@
                 <a href="location.html" class="barItem">Location</a>
                 <a href="areaattractions.html" class="barItem">Area Attractions</a>
                 <a href="photogallery.html" class="barItem">Photo Gallery</a>
-                <a href="contactus.php" class="barItem">Contact Us</a>
+                <a href="contactus.html" class="active">Contact Us</a>
             </div>
         </div>
-        <div class="slogan">
-            <img src= "images/header.png">
-        </div>
-    </div>
+        <h1>Northwood Shores </h1>
+        <p>Start a family tradition!</p>
     </div>
 
-    <div class="page">Amenities</div>
- 
+    <div class="page">Contact Us PHP</div>
+
     <div class="container">
-        <ul class="amenities">
-            <li>Heated Swimming Pool</li>
-            <li>Clubhouse/Gameroom</li>
-            <li>Full Hookup at every site</li>
-            <li>20/30/50 Amp Electric</li>
-            <li>Swimming Beach</li>
-            <li>Fish Cleaning Area</li>
-            <li>Entire Site WIFI</li>
-            <li>Shower House</li>
-            <li>Playground</li>
-            <li>Hand Dipped Ice Cream</li>
-            <li>Home Made Pizza</li>
-            <li>Ice Cream Treats</li>
-            <li>Candy</li>
-            <li>Miscellaneous Camp Needs</li>
-        </ul>
+        <div class="row">
+            <div class="column">
+              <form action="/ContactUs.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+        <p><pre>
+    
+    If you wish to contact us by e-mail, 
+    phone or letter please contact us at:
+    <b>
+    Northwood Shores
+    1876 29 3/4 Ave
+    Rice Lake, WI 54868
+    (715)234-1150 SEASONAL
+    Cell (815)703-8233 YEAR ROUND
+    </b>
+    Off Season
+    <b>
+    PO Box 494
+    Roscoe, IL 61073
+    </b>
+    Email Earl
+
+    IF THE ABOVE LINK DOES NOT WORK EMAIL: 
+    
+    <b>
+            bordercamp@yahoo.com
+    </b>
+
+    2022 Northwood Shores Campground, LLC All rights reserve
+
+
+
+
+    
+        </pre>
+        </p>
     </div>
+
     <footer> 
         <p>2022 Northwood Shores Campground, LLC All rights reserved </p>
         <a href="https://www.facebook.com/Northwood-Shores-Campground-202453299841458/" class="fa fa-facebook" target="_blank"></a>
-    </footer> 
+    </footer>
+    
 </body>
 </html>
