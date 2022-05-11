@@ -21,20 +21,42 @@ footer{
     padding-left: 1rem;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 2px solid black;
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(87, 87, 87, 0.648);
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 .card-available {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#seasonal, #daily {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    border-radius: 5px; /* 5px rounded corners */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    width: 30%;
-    background-color: rgb(245, 168, 168);
-}
-
-.card-container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px; /* 5px rounded corners */
     padding: 2px 16px;
     text-align: center;
-    justify-content: center;
+    width: 40%;
+}
+#seasonal:hover, #daily:hover{
+    box-shadow: 5px 5px 5px rgba(87, 87, 87, 0.648);
 }
 
 footer{

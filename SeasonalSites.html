@@ -18,7 +18,7 @@
         <a href="amenities.html" class="barItem">Amenities</a>
         <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
         <a href="sitemap.html" class="barItem">Site Map</a>
-        <a href="seasonalsites.html" class="active">Available Seasonal Sites</a>
+        <a href="seasonalsites.php" class="active">Available Seasonal Sites</a>
         <a href="lake.html" class="barItem">The Lake</a>
         <a href="location.html" class="barItem">Location</a>
         <a href="areaattractions.html" class="barItem">Area Attractions</a>
@@ -34,7 +34,7 @@
                 <a href="amenities.html" class="barItem">Amenities</a>
                 <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
                 <a href="sitemap.html" class="barItem">Site Map</a>
-                <a href="seasonalsites.html" class="active">Available Seasonal Sites</a>
+                <a href="seasonalsites.php" class="active">Available Seasonal Sites</a>
                 <a href="lake.html" class="barItem">The Lake</a>
                 <a href="location.html" class="barItem">Location</a>
                 <a href="areaattractions.html" class="barItem">Area Attractions</a>
@@ -48,17 +48,20 @@
     </div>
     </div>
 
+
+        
+
     <div class="page">Seasonal Sites</div>
     <div class="container">
         <div class="card-available">
             <div class="card-container">
                 <h4><b>Seasonal:</b></h4>
-                <p>None currently available</p>
+                <p class="availablity">None currently available</p>
             </div>
         </div>
         <div class="card">
             <p>Annual <b>$2,550.00</b> including tax, plus metered electricity</p>
-            <p>Other Seasonal Sites annual <b>$2,395.00</b> including tax, plus metered electricity Jamuary 2. 2020</p>
+            <p>Other Seasonal Sites annual <b>$2,395.00</b> including tax, plus metered electricity January 2. 2020</p>
             <p>All sites have water, 20,30 & 50 AMP, and sewer. In season occupancy is prorated on a 150 day basis</p>
             <p>You are welcome to leave your camper on site all 12 months</p>
         </div>
@@ -71,3 +74,51 @@
 </body>
 
 </html>
+<?php
+// Defined as constants so that they can't be changed
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PASSWORD', '');
+DEFINE ('DB_HOST', 'localhost');
+DEFINE ('DB_NAME', 'test1');
+// $dbc will contain a resource link to the database
+// @ keeps the error from showing in the browser
+$dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+OR die('Could not connect to MySQL: ' .
+mysqli_connect_error());
+echo "Connection Successful";
+
+//Retrieve the values
+$id = $_REQUEST['id'];
+
+$getFlightIds = "SELECT id FROM flights";
+$flights = array();
+$response = mysqli_query($dbc, $getFlightIds);
+if($response){
+    while($row = mysqli_fetch_array($response)){
+        array_push($flights, $row['id']);
+    }
+}
+
+
+if($id != "" && array_search($id, $flights)){
+    //delete values from table
+    $sql = "DELETE FROM flights WHERE Id='$id';";
+    if(mysqli_query($dbc, $sql)){
+        echo"<h3>data deleted from database successfully."
+            . " Please browse your localhost php my admin"
+            . " to view the updated data</h3>";
+        echo ("$id");
+        echo "<a href='index.php'>Back to Index</a> <br>"; 
+    }else{
+        echo "Could not delete data because could not execute query";
+        echo "<a href='index.php'>Back to Index</a> <br>";
+    }
+}else{
+    echo "Could not delete data because some value was empty or does not exist";
+    echo "<a href='index.php'>Back to Index</a> <br>";
+}
+
+//Clos connection
+mysqli_close($dbc);
+
+?>
