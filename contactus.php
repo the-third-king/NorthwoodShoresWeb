@@ -43,7 +43,7 @@
         <p>Start a family tradition!</p>
     </div>
 
-    <div class="page">Contact Us PHP</div>
+    <div class="page">Contact Us</div>
 
     <div class="container">
         <div class="row">
