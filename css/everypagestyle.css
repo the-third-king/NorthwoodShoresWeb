@@ -12,6 +12,15 @@
     order: 5;
 }
 
+.adminBtn{
+    display: flex;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+}
+
 .nav-bar a{
     display: inline-block;
     text-decoration: none;
@@ -97,6 +106,8 @@ footer p{
     color: white;
 }
 
+
+
 @media(max-width: 700px){
     .nav-bar{
         display: none;
@@ -106,8 +117,9 @@ footer p{
     }
     .slogan{
         margin-left: 0;
-        height: 50px;
+        height: 100px;
         align-items: center;
+        justify-content: space-between;
     }
     .dropdown{
         display: flex;

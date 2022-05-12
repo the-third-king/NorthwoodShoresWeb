@@ -39,8 +39,9 @@
                 <a href="contactus.html" class="active">Contact Us</a>
             </div>
         </div>
-        <h1>Northwood Shores </h1>
-        <p>Start a family tradition!</p>
+        <div class="slogan">
+            <a href="adminSignIn.php" class=adminBtn><img src= "images/header.png"></a>
+        </div>
     </div>
 
     <div class="page">Contact Us</div>
