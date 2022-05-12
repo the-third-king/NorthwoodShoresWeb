@@ -64,7 +64,7 @@
   $resPassword = $person['pword'];
 
   if(strcmp($password, $resPassword) == 0 && strcmp($username, $resUsername) == 0){
-    echo "<script>window.location.replace(\"HomePage.html\");</script>";
+    echo "<script>window.location.replace(\"siteChange.php\");</script>";
   }else if(strcmp($password, "") == 0){
   }else{
     echo "<script>alert(\"Failed Login\");</script>";
