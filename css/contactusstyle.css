@@ -17,8 +17,6 @@ body{
 
 footer{
     display: flex;
-    position: fixed;
-    bottom: 0;
     flex-direction: row;
     background: #2186e4;
     justify-content: center;
