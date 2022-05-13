@@ -19,19 +19,14 @@ body{
     width: 30%;
     background-color: rgb(245, 168, 168);
  }
-.card-daily-sites {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    width: 30%;
-    background-color: lightgreen;
-}
-.card-extra {
+
+.extra{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     width: 30%;
     align-items: center;
+    margin: 20px;
 }
   /* Add some padding inside the card container */
 .card-container {
@@ -46,10 +41,51 @@ body{
     width: 96%;
 }
 
+.info:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.daily{
+    font-size: xx-large;
+}
+
+.card-daily-sites {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: #789495;
+    color: lightgray;
+    width: 50%;
+}
+
+.bottom{
+    margin-bottom: 20px;
+}
+
+.seasonal{
+    font-size: xx-large;
+}
+
+.card-seasonal-sites{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: #789495;
+    color: lightgray;
+    width: 50%;
+}
+
+
+
+.info{
+    font-size: large;
+}
+
 .column {
     margin: 2px;
     flex-wrap: wrap;
-    width: 20%;
+    width: 40%;
     padding: 30px 10px;
 }
 .row {
@@ -57,7 +93,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around
 } 
 
 footer{
