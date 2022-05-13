@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a:link, a:visited {
     color: black;
     text-decoration: none;
@@ -12,9 +16,12 @@ a:hover {
 a {
     border: 2px solid red;
     background-color: red;
-    padding: 5px;
-    border-radius: 5px;
-    width: 200px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
 }
 
 input[type=number] {
@@ -30,7 +37,7 @@ input[type=number] {
     padding: 16px;
 }
 
-button {
+button{
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -50,8 +57,13 @@ input[type=submit]{
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.tableContain{
+    padding: 16px;
 }
+
+#siteTable{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+}
+

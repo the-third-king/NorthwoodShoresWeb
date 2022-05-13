@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="css/siteChangeStyle.css">
 </head>
 <body>
-<a href="HomePage.html">Back To Home Page</a>
-    
-<form method = "post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-    <div class="container">
-        <label for="site"><b>Camp Site: </b></label>
-        <input type="number" placeholder="Enter Site number" name="site" required>
+    <div class="outer-container">
             
-        <button type="submit">Search</button>
+        <form method = "post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+            <div class="container">
+                <label for="site"><b>Camp Site: </b></label>
+                <input type="number" placeholder="Enter Site number" name="site" required>
+                    
+                <button type="submit">Search</button>
+                <a href="HomePage.html">Back To Home Page</a>
+            </div>
+            
+        </form>
+        
+        <div class="tableContain">
+            <table id="siteTable"></table>
+        </div>
+        
     </div>
-</form>
-<div class="tableContain">
-    <table id="siteTable"></table>
-</div>
 </body>
 </html>
 
@@ -49,12 +54,12 @@
             if($site['available'] == 1){
                 $query = "UPDATE site SET available=false WHERE id=$siteNum;";
                 if(mysqli_query($dbc, $query)){
-                    echo "<script>alert('Update Successful where true')</script>";
+                    echo "<script>alert('Update Successful.  Campsite ". $siteNum." is now unavailable')</script>";
                 }
             }else{
                 $query = "UPDATE site SET available=true WHERE id=$siteNum;";
                 if(mysqli_query($dbc, $query)){
-                    echo "<script>alert('Update Successful where false')</script>";
+                    echo "<script>alert('Update Successful. Campsite ". $siteNum." is now available')</script>";
                 }
             }
         }

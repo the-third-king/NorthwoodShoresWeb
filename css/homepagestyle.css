@@ -24,7 +24,7 @@ body{
     height: 500px;
     border-radius: 10px;
     width: 95%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .lowerHeader{
@@ -35,6 +35,10 @@ body{
 .disclaimer{
     text-align: center;
     color: black;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 90%;
 }
 
 #copyrights{
