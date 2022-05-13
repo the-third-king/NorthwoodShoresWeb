@@ -1,114 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <link rel="stylesheet" href="css/photogallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/everypagestyle.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="css/photogallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/everypagestyle.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
+
 <body>
-    <nav class="nav-bar">
+  <nav class="nav-bar">
+    <a href="homepage.html" class="barItem">Home</a>
+    <a href="amenities.html" class="barItem">Amenities</a>
+    <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
+    <a href="sitemap.html" class="barItem">Site Map</a>
+    <a href="seasonalsites.php" class="barItem">Available Seasonal Sites</a>
+    <a href="lake.html" class="barItem">The Lake</a>
+    <a href="lake.html" class="barItem">Location</a>
+    <a href="areaattractions.html" class="barItem">Area Attractions</a>
+    <a href="photogallery.html" class="active">Photo Gallery</a>
+    <a href="contactus.php" class="barItem">Contact Us</a>
+  </nav>
+
+  <div class="slogan">
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-bars"></i></button>
+      <div class="dropdown-content">
         <a href="homepage.html" class="barItem">Home</a>
         <a href="amenities.html" class="barItem">Amenities</a>
         <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
         <a href="sitemap.html" class="barItem">Site Map</a>
         <a href="seasonalsites.php" class="barItem">Available Seasonal Sites</a>
         <a href="lake.html" class="barItem">The Lake</a>
-        <a href="lake.html" class="barItem">Location</a>
+        <a href="location.html" class="barItem">Location</a>
         <a href="areaattractions.html" class="barItem">Area Attractions</a>
         <a href="photogallery.html" class="active">Photo Gallery</a>
         <a href="contactus.php" class="barItem">Contact Us</a>
-    </nav>
-
-    <div class="slogan">
-        <div class="dropdown">
-            <button class="dropbtn"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
-                <a href="homepage.html" class="barItem">Home</a>
-                <a href="amenities.html" class="barItem">Amenities</a>
-                <a href="ratesreservations.html" class="barItem">Rates & Reservations</a>
-                <a href="sitemap.html" class="barItem">Site Map</a>
-                <a href="seasonalsites.php" class="barItem">Available Seasonal Sites</a>
-                <a href="lake.html" class="barItem">The Lake</a>
-                <a href="location.html" class="barItem">Location</a>
-                <a href="areaattractions.html" class="barItem">Area Attractions</a>
-                <a href="photogallery.html" class="active">Photo Gallery</a>
-                <a href="contactus.php" class="barItem">Contact Us</a>
-            </div>
-        </div>
-        <div class="slogan">
-          <a href="adminSignIn.php" class=adminBtn><img src= "images/header.png"></a>
       </div>
+    </div>
+    <div class="slogan">
+      <a href="adminSignIn.php" class=adminBtn><img src="images/header.png"></a>
+    </div>
   </div>
+  </div>
+
+  <div class="page">Photo Gallery</div>
+
+  <div class="container">
+    <div class="row">
+      <img class="cardImage" src="images/beach.jpg" alt="The Beach.">
+      <img class="cardImage" src="images/campfire.jpg" alt="A typical campfire.">
+      <img class="cardImage" src="images/campfire2.jpg" alt="A campfire.">
     </div>
 
-    <div class="page">Photo Gallery</div>
-
-     <div class="container">
-        <div class="card">
-            <img src="images/beach.jpg" alt="The Beach." style="width:100%" class="card-image">
-              <h4><b>The beach at Northwood Shores Campground.</b></h4> 
-              <hr>
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/campfire.jpg" alt="A typical campfire." style="width:100%" class="card-image">
-              <h4><b>A typical campfire at a seasonal site.</b></h4>
-              <hr> 
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/campfire2.jpg" alt="A campfire." style="width:100%" class="card-image">
-              <h4><b>Another example of a campfire at Northwood Shores.</b></h4> 
-              <hr>
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/campfire3.jpg" alt="FIRE." style="width:100%" class="card-image">
-              <h4><b>Campfires are one of the most popular social spots in the campground.</b></h4> 
-              <hr>
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-
-        <div class="card">
-            <img src="images/canoe.jpg" alt="A canoe." style="width:100%" class="card-image">
-              <h4><b>The lake offers plenty of family fun during your stay.</b></h4> 
-              <hr>
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/fishing.jpg" alt="Lake Fishing." style="width:100%" class="card-image">
-              <h4><b>There are many fish to catch on Upper Devils lake.</b></h4>
-              <hr> 
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/house.jpg" alt="The lodge." style="width:100%" class="card-image">
-              <h4><b>The lodge where you can buy ice cream! </b></h4> 
-              <hr>
-              <p>Northwood Shores Campground</p> 
-          </div>
-
-          <div class="card">
-            <img src="images/lake.jpg" alt="The lake, again." style="width:100%" class="card-image">
-                    <h4><b>A senic image of the lake at sunset.</b></h4> 
-                    <hr>
-                    <p>Northwood Shores Campground</p> 
-             </div>
+    <div class="row">
+      <img class="cardImage" src="images/campfire3.jpg" alt="FIRE.">
+      <img class="cardImage" src="images/canoe.jpg" alt="A canoe.">
+      <img class="cardImage" src="images/fishing.jpg" alt="Lake Fishing.">
     </div>
-    <footer> <!-- footer -->
-        <p>2022 Northwood Shores Campground, LLC All rights reserved </p>
-        <a href="https://www.facebook.com/Northwood-Shores-Campground-202453299841458/" class="fa fa-facebook" target="_blank"></a>
-    </footer>
+
+    <div class="row">
+      <img class="cardImage" src="images/house.jpg" alt="The lodge.">
+      <img class="cardImage" src="images/lake.jpg" alt="The lake, again.">
+    </div>
+  </div>
+  <footer>
+    <!-- footer -->
+    <p>2022 Northwood Shores Campground, LLC All rights reserved </p>
+    <a href="https://www.facebook.com/Northwood-Shores-Campground-202453299841458/" class="fa fa-facebook"
+      target="_blank"></a>
+  </footer>
 </body>
+
 </html>
